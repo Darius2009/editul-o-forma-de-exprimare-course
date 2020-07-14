@@ -1,0 +1,16 @@
+title: Editul o formă de exprimare
+description: 'Dacă ești la fel ca mine praf la poze, editul te va ajuta'
+template:
+  repo: editul-o-forma-de-exprimare-template
+  name: editul-o-forma-de-exprimare
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
